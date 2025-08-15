@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.react-calender{
+    width: 100% !important;
+    border: none !important; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+}
+
+.react-calender__title--active{
+    background-color: #07defa !important;
+    color: #333 !important;
+}
+.rbc-btn-group:first-child{
+    display: none !important;
+    
+}
+.rbc-btn-group:first-child {
+    text-align: right !important;
+    padding: 0px 20px !important;
+
+}
+
+.rbc-toolbar-label {
+    padding: 0ps 20px !important;
+    text-align:right !important;
+}
+.rbc-btn-group:last-child {
+    font-size: 13px !important;
+    
+}
+.rbc-btn-group:last-child button {
+    border: none !important;
+    background-color: #07defa;
+    margin-left: 2px !important;
+    
+}
+.rbc-time-view{
+    border-color: rgb(9, 9, 9) !important;
+ 
+    
+}
+/* Hide default navigation buttons */
+/* .rbc-btn-group:first-child {
+  display: none !important;
+}
+
+/* Toolbar Label: Center and Bold */
+
+/* Hide default navigation buttons */
+.rbc-btn-group:first-child {
+  display: none !important;
+}
+
+/* Toolbar Label: Center and Bold */
+.rbc-toolbar-label {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 0;
+  text-align: center !important;
+  color: #333;
+}
+
+/* View Switch Buttons (Day, Work Week) */
+.rbc-btn-group:last-child button {
+  font-size: 13px !important;
+  border: none !important;
+  background-color: #07defa !important;
+  color: white !important;
+  margin-left: 5px !important;
+  padding: 5px 12px !important;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.rbc-btn-group:last-child button:hover {
+  background-color: #03c8e0 !important;
+}
+
+/* Calendar Time View Layout */
+.rbc-time-view {
+  border: 1px solid #e0e0e069 !important;
+  background-color: #fcfafa;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+/* Time Labels (8:00 AM, etc.) */
+.rbc-time-content .rbc-timeslot-group {
+  border-color: #f2eded;
+}
+
+/* Event Box Stylingrbc-event {
+  background-color: #3b82f6 !important; /* Tailwind blue-500 */
+  /* color: white !important;
+  border: none !important;
+  padding: 4px 6px !important;
+  font-size: 12px !important;
+  border-radius: 6px !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+} */
+
+/* Event Title Textrbc-event-content {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Highlight today column */
+.rbc-today {
+  background-color: #e6f7ff !important;
+}
+
+/* Hour Cell Divider Lines */
+.rbc-time-gutter,
+.rbc-time-content {
+  border-color: #f0f0f0 !important;
+}
+
+/* Responsive fix: full width on small screens */
+@media (max-width: 768px) {
+  .rbc-time-view {
+    font-size: 12px;
+  }
+  .rbc-toolbar-label {
+    font-size: 16px;
+  }
+  .rbc-btn-group:last-child button {
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+}
+/* Style 10:00 AM slot (based on order — fragile!) */
+.rbc-time-slot:nth-child(5) {
+  background-color: #ffe6e6; /* Light red for break */
+}
+
+/* styles/globals.css */
+
+/* Events for 12th August (e.g., 1srbc-event on that day) */
+.rbc-event:nth-child(1) {
+  background-color: #b2ebf2; /* Light Cyan */
+}
+
+.rbc-event:nth-child(2) {
+  background-color: #a5d6a7; /* Light Green */
+}
+
+.rbc-event:nth-child(3) {
+  background-color: #fff59d; /* Light Yellow */
+}
+
+.rbc-event:nth-child(4) {
+  background-color: #ffccbc; /* Light Orange */
+}
+
+.rbc-event:nth-child(5) {
+  background-color: #ce93d8; /* Light Purple */
+}
+
+/* Events for 13th August (e.g., 6trbc-event on that day) */
+.rbc-event:nth-child(6) {
+  background-color: #f8bbd0; /* Light Pink */
+}
+
+.rbc-event:nth-child(7) {
+  background-color: #dcedc8; /* Light Lime */
+}
+
+.rbc-event:nth-child(8) {
+  background-color: #c5cae9; /* Light Blue */
+}
+
+/* Common styling for all event */
+/* .rbc-event {
+  color: #000!important;
+  padding: 10px !important;
+  margin: 2px 0 !important;
+  border-radius: 4px !important;
+ 
+} */
+/* styles/globals.css or any global CSS file */
+.rbc-event {
+  padding: 8px !important;
+  font-size: 14px !important;
+  height: auto !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.rbc-event-content {
+  white-space: normal !important;
+  word-break: break-word;
+}
