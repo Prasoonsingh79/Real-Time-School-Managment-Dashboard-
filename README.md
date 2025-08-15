@@ -1,1 +1,1 @@
-# Real-Time-School-Managment-Dashboard-
+# Real-Time-School-Managment-Dashboard
